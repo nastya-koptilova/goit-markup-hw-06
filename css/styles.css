@@ -98,14 +98,14 @@ p {
 }
 
 .header__nav-link,
-.header__contacts {
+.header__contacts-link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: inline-block;
 }
 
 .header__nav-link,
-.header__contacts {
+.header__contacts-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -117,21 +117,21 @@ p {
   color: var(--main-text-color);
 }
 
-.header__contacts {
+.header__contacts-link {
   display: inline-flex;
   align-items: center;
   color: var(--text-description-color);
 }
 
-.header__icon {
+.header__contacts-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
 .header__nav-link:hover,
-.header__contacts:hover,
+.header__contacts-link:hover,
 .header__nav-link:focus,
-.header__contacts:focus {
+.header__contacts-link:focus {
   color: var(--object-active-color);
 }
 
@@ -310,7 +310,7 @@ header::after {
   max-width: 270px;
 }
 
-.team__list-title {
+.team__items-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -318,7 +318,7 @@ header::after {
   margin-bottom: 10px;
 }
 
-.team__list-description {
+.team__items-description {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -518,7 +518,7 @@ header::after {
   color: var(--footer-contacts-color);
 }
 
-.footer__btn-container {
+.footer__subscribe-btn-container {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -629,7 +629,7 @@ header::after {
   overflow: hidden;
 }
 
-.portfolio__thumb-container {
+.portfolio__description {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -645,12 +645,12 @@ header::after {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__card:hover .portfolio__thumb-container,
-.portfolio__card:focus .portfolio__thumb-container {
+.portfolio__card:hover .portfolio__description,
+.portfolio__card:focus .portfolio__description {
   transform: translateY(0);
 }
 
-.portfolio__thumb-description {
+.portfolio__text {
   font-size: 18px;
   line-height: calc(28 / 18);
   color: var(--main-background-color);
